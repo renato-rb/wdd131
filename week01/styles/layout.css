@@ -1,0 +1,75 @@
+/* Page Layout */
+body {
+    font-family: Cambria, Georgia, serif;
+    max-width: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-areas:
+        "header header"
+        "main   aside"
+        "footer footer";
+}
+
+/* Grid Area Assignments */
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* Colors & Section Sizing */
+header,
+footer {
+    background-color: #333;
+    color: white;
+}
+
+main {
+    background-color: #ccc;
+    min-height: 200px;
+}
+
+footer {
+    text-align: center;
+    min-height: 120px;
+}
+
+/* Navigation (Flexbox) */
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 12px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+/* Typography & Spacing */
+h1,
+main p,
+aside p,
+footer p {
+    padding: 0 15px;
+}
+
+h1 {
+    font-size: 1em;
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
