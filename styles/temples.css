@@ -6,6 +6,7 @@
   /* gold (hover) */
   --text: #222222;
   --white: #ffffff;
+  --border: #cccccc;
   --heading-font: "Lora", Georgia, serif;
   --body-font: "Open Sans", Arial, sans-serif;
 }
@@ -73,7 +74,7 @@ nav a {
   text-decoration: none;
   font-size: 1.3rem;
   padding: 0.6rem 1rem;
-  border-bottom: 2px solid transparent;
+  border-bottom: 2px solid var(--primary);
   transition: color 0.3s, border-color 0.3s;
 }
 
@@ -113,7 +114,7 @@ figure img {
   aspect-ratio: 8 / 5;
   object-fit: cover;
   display: block;
-  border: 1px solid #cccccc;
+  border: 1px solid var(--border);
 }
 
 figcaption {
