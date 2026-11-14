@@ -1,0 +1,41 @@
+/* Larger views */
+
+/* Medium view: 2 columns, horizontal menu */
+@media screen and (min-width: 640px) {
+  header {
+    grid-template-columns: auto 1fr;
+    padding: 0.75rem 1.5rem;
+  }
+
+  /* Hide the hamburger button in the larger view */
+  #menu {
+    display: none;
+  }
+
+  nav {
+    grid-column: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  nav a {
+    font-size: 1.1rem;
+  }
+
+  .album {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 1rem;
+  }
+}
+
+/* Large view: 3 columns */
+@media screen and (min-width: 860px) {
+  main {
+    max-width: 760px;
+  }
+
+  .album {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
